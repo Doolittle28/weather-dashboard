@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-primary">
+        <span class="navbar-text text-light">
+            Weather Dashboard
+        </span>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-4 card">
+                <div class="card-header">Search for a City:</div>
+                <div class="card-body">
+                    <input type="text" class="form-control form-control-lg" id="city" placeholder="Enter City Here">
+                    <button onclick="getCity()" class="btn btn-primary my-2" id="search">Search <i
+                            class="fas fa-search"></i></button>
+                    <button class="btn btn-secondary" id="clear">Clear History</button>
+                    <ul class="col-sm-6" id="history">History:</ul>
+                </div>
+            </div>
+            <div class="col-sm-8" id="current-city">Current City Weather</div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3>5 Day Forecast</h3>
+            <div class="row" id="five-day-cont">
+                <div class="card five-day" id="day-1">
+                    <p>Date</p>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </div>
+                <div class="card five-day" id="day-2">
+                    <p>Date</p>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </div>
+                <div class="card five-day" id="day-3">
+                    <p>Date</p>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </div>
+                <div class="card five-day" id="day-4">
+                    <p>Date</p>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </div>
+                <div class="card five-day" id="day-5">
+                    <p>Date</p>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/js/script.js"></script>
+</body>
+
+</html>

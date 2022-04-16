@@ -1,0 +1,21 @@
+.navbar-text {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+#five-day-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.five-day {
+    display: none;
+    margin: 20px;
+
+}
+
