@@ -8,9 +8,16 @@
     justify-content: center;
 }
 
+h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 #five-day-cont {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .five-day {
@@ -18,4 +25,3 @@
     margin: 20px;
 
 }
-
